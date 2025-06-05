@@ -1,0 +1,7 @@
+2025-05-30 14:02:37 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/-GET-::ffff:192.168.1.3
+2025-05-30 14:02:50 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/loginMsg.js-GET-::ffff:192.168.1.3
+2025-05-30 14:02:50 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/cgi/get.cgi?cmd=home_login-GET-::ffff:192.168.1.3
+2025-05-30 14:02:51 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/-POST-::ffff:192.168.1.3
+2025-05-30 14:17:58 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/-GET-::ffff:192.168.1.3
+2025-05-30 14:18:11 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/loginMsg.js-GET-::ffff:192.168.1.3
+2025-05-30 14:18:11 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/cgi/get.cgi?cmd=home_login-GET-::ffff:192.168.1.3

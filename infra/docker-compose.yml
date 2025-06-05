@@ -1,0 +1,17 @@
+
+
+services:
+  tasksphere-api:
+    container_name: tasksphere-api
+    build:
+      context: ..
+      dockerfile: infra/docker/dockerfile
+    ports:
+      - "8444:8444"
+    environment:
+      - NODE_ENV=production
+      - PORT=8444
+      - MONGO_URI=${MONGO_URI}
+    env_file:
+         .env
+    restart: unless-stopped
