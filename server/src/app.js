@@ -17,6 +17,7 @@ import errorHandler from "./middlewares/errorHandler.js";
 dotenv.config(); //Keep sensitive config (DB URLs, JWT secret, etc.) out of your code.
 
 //connectDB();
+// Test CI/CD run on <today's date>
 
 const app = express();
 
