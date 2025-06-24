@@ -5,3 +5,7 @@
 2025-05-30 14:17:58 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/-GET-::ffff:192.168.1.3
 2025-05-30 14:18:11 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/loginMsg.js-GET-::ffff:192.168.1.3
 2025-05-30 14:18:11 [ERROR]: 500-Cannot set property query of #<IncomingMessage> which has only a getter-/cgi/get.cgi?cmd=home_login-GET-::ffff:192.168.1.3
+2025-06-20 15:49:05 [ERROR]: 500-File too large-/api/upload-POST-::1
+2025-06-20 17:42:15 [ERROR]: 500-this.client.send is not a function-/api/s3-POST-::1
+2025-06-20 17:54:48 [ERROR]: 500-this.client.send is not a function-/api/s3-POST-::1
+2025-06-20 18:20:47 [ERROR]: 400-The bucket does not allow ACLs-/api/s3-POST-::1

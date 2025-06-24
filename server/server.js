@@ -1,23 +1,32 @@
 import https from 'https';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../infra/.env') });
+
+const sslPath = path.resolve(__dirname, '../ssl');
 import app from "./src/app.js";
 import logger from './src/utils/logger.js';
 import { connectDB, mongoose } from "./src/config/db.js";
 
-dotenv.config();
+
+
 
 //SSl setup
-const __dirname = path.resolve();
+
+
 const sslOption = {
-    key: fs.readFileSync('./ssl/server.key'),
-    cert: fs.readFileSync('./ssl/server.cert')//after implementing graceful shutdown
+    key: fs.readFileSync(path.join(sslPath, 'server.key')),
+    cert: fs.readFileSync(path.join(sslPath, 'server.cert'))//after implementing graceful shutdown
     // key: fs.readFileSync(path.join(__dirname, 'ssl', 'server.key')),
     // cert: fs.readFileSync(path.join(__dirname, 'ssl', 'server.cert')),
 
 }
-
+// Explicitly load the env file from ../infra/.env
+//dotenv.config({ path: path.resolve(__dirname, '../infra/.env') });
 // const PORT = process.env.PORT || 5000;
 // https.createServer(sslOption, app).listen(PORT, () => console.log(`server is running on port ${PORT}`)); //chnaged during graceful shutdown omplementation
 
@@ -42,6 +51,8 @@ const startServer = async () => {
 };
 
 startServer();
+
+
 
 //Graceful shutdown
 
